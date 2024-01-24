@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>URL</key>
-	<string>https://web.archive.org/web/*/http://apt.thebigboss.org/repofiles/cydia/debs2.0/*</string>
+	<string>https://web.archive.org/web/*/http://apt.thebigboss.org/repofiles/cydia/*</string>
 </dict>
 </plist>
