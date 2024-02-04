@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <title>Hanabi's Cydia Archive Repo</title>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
-    html {
-        font-family: 'Ubuntu Mono', monospace;
-    }
+        @import url(https://cydia.saurik.com/cytyle/style-3163da6b7950852a03d31ea77735f4e1d2ba6699.css);
     </style>
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
@@ -15,13 +12,22 @@
     <link rel="manifest" href="./site.webmanifest" />
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
 </head>
-<body>
-    <h1>Hanabi's Cydia Archive Repo</h1>
-    <p>Add this repo to <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://catslover2006.github.io/cydiaArchive/">Cydia</a></p>
-    <p>Retrieved from:
-    <ul>
-        <li><a href="https://www.mileskabal.com/cydia/deb/">https://www.mileskabal.com/cydia/deb/</a></li>
-        <li><a href="http://apt.thebigboss.org/repofiles/cydia/">The Bigboss</a> and <a href="https://web.archive.org/web/*/http://apt.thebigboss.org/repofiles/cydia/*">its archive</a></li>
-    </ul></p>
+<body class="pinstripe">
+    <panel>
+        <fieldset>
+            <div>
+                <div style="height:2rem">
+                    <img src="./icon.png" style="height:2rem;width:2rem;float:left">
+                        <strong><center style="padding:.5rem 0">Hanabi's Cydia Archive Repo</center></strong>
+                </div>
+            </div>
+            <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://catslover2006.github.io/cydiaArchive/"><div><div>Add to Cydia</div></div></a>
+        </fieldset>
+        <label>Sources</label>
+        <fieldset style="background-color: #ccf">
+            <a href="https://www.mileskabal.com/cydia/deb/"><div><div>mileskabal.com</div></div></a>
+            <a href="http://apt.thebigboss.org/repofiles/cydia/"><div><div>The Bigboss</div></div></a><hr><a href="https://web.archive.org/web/*/http://apt.thebigboss.org/repofiles/cydia/*"><div><div>The Bigboss <small style="font-size: x-small">Archive.org</small></div></div></a>
+        </fieldset>
+    </panel>
 </body>
 </html>
