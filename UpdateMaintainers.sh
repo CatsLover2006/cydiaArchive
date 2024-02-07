@@ -18,7 +18,7 @@ for i in $dir/*.deb; do
     [ -f "$i" ] || break
     echo "File: $i"
     dpkg-deb -R "$i" tmp
-    python3 UpdateMaintainerFile.py
+    python3 ./UpdateMaintainerFile.py
     dpkg-deb -b tmp "$i"
     rm -rf ./tmp
 done
