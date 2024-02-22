@@ -15,7 +15,7 @@ for i in "$@"; do
     echo "File: $i"
     dpkg-deb -R "$i" tmp
     python3 ./UpdateSection.py "$1"
-    dpkg-deb -b tmp "$i"
+    dpkg-deb -b -Zgzip -Snone -z9 tmp "$i"
     rm -rf ./tmp
 done
 

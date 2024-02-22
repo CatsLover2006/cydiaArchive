@@ -19,7 +19,7 @@ for i in $dir/*/*.deb; do
     echo "File: $i"
     dpkg-deb -R "$i" tmp
     python3 ./UpdateMaintainerFile.py
-    dpkg-deb -b tmp "$i"
+    dpkg-deb -b -Zgzip -Snone -z9 tmp "$i"
     rm -rf ./tmp
 done
 
